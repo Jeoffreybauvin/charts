@@ -175,6 +175,13 @@ airflow:
   ##
   extraPipPackages: []
 
+  ## extra pip arguments to install in the web/scheduler/worker/flower Pods
+  ##
+  ## EXAMPLE:
+  ##   extraPipArgs: '--proxy=https://[username:password@]proxyserver:port'
+  ##
+  extraPipArgs: ""
+
   ## extra environment variables for the web/scheduler/worker/flower Pods
   ##
   ## SPEC - EnvVar:
