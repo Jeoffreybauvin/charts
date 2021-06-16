@@ -70,7 +70,7 @@ EXAMPLE USAGE: {{ include "airflow.init_container.install_pip_packages" (dict "R
     - "bash"
     - "-c"
     - |
-      pip install {{ .extraPipArgs }}  --user {{ range .extraPipPackages }}{{ . | quote }} {{ end }} && \
+      pip install {{ .Values.airflow.extraPipArgs }} --user {{ range .extraPipPackages }}{{ . | quote }} {{ end }} && \
       echo "copying '/home/airflow/.local/*' to '/opt/home-airflow-local'..." && \
       cp -r /home/airflow/.local/* /opt/home-airflow-local
   volumeMounts:
