@@ -9,7 +9,7 @@
 ### 1 - Add the Repo to Helm
 
 ```sh
-helm repo add airflow-stable https://airflow-helm.github.io/charts
+helm repo add airflow-stable https://jeoffreybauvin.github.io/charts
 helm repo update
 ```
 
